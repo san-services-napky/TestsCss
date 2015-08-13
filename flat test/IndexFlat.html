@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/reset/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/styles/master.css" media="screen" title="no title" charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="main-container">
+
+      <nav>
+        <ul class="navigation-bar clearfix">
+                <li class="navigation-bar-container">
+                    <a href="#"><p><img src="assets/img/ui_settings.png" alt="Setttings" /> Settings</p></a>
+                </li>
+                <li class="navigation-bar-container">
+                    <a href="#"><p><img src="assets/img/ui_account.png" alt="Account" /> Account </p></a>
+                </li>
+                <li class="navigation-bar-container">
+                    <a href="#"><p><img src="assets/img/ui_mail.png" alt="Mail" /> Messages<i class="badge" id="test">5</i></p></a>
+                </li>
+                    <script <source src="flat.js" ></script>
+                <li class="navigation-bar-container">
+                    <a href="#"> <p><img src="assets/img/ui_favorite.png" alt="Favorites" /> Favorites </p> </a>
+                </li>
+                <li class="navigation-bar-container">
+                    <a href="#"><p>Me<img src="assets/img/ui_down_arrow.png" alt="Drop down arrow" /> <img  id="avatar" src="http://placehold.it/40x40" alt="Avatar" /></p></a>
+                    <ul>
+                          <li class="navigation-bar-sub-item"><a href="#"> <p> Subelement 1</p> </a></li>
+                          <li class="navigation-bar-sub-item"><a href="#"> <p> Subelement 2</p> </a></li>
+                    </ul>
+                </li>
+        </ul>
+      </nav>
+
+        <div class="column-box">
+
+          <!--  ---------------------------First column--------------------------- -->
+            <div class="column">
+                <div class="widget no-padding">
+                    <ul>
+                      <li class="menu-box-header"> <a href="">Menu Box</a></li>
+                      <li class="menu-box-item"> <a href=""><img src="assets/img/ui_mail.png" alt="Mail" /> Messages </a> </li>
+                      <li class="menu-box-item"> <a href=""><img src="assets/img/ui_airplane.png" alt="Invite" /> Invites </a> </li>
+                      <li class="menu-box-item"> <a href=""><img src="assets/img/ui_calendar.png" alt="Events" /> Events </a> </li>
+                      <li class="menu-box-item"><a href=""><img src="assets/img/ui_settings.png" alt="Settings" /> Account Settings </a></li>
+                      <li class="menu-box-item"><a href=""><img src="assets/img/ui_graph.png" alt="Statistics" /> Statistics </a></li>
+                    </ul>
+              </div>
+
+              <div class="widget no-padding">
+                  <div class="stat-widget-pie-chart-container">
+                    <h1 class="stat-header">OS AUDIENCE STATS</h1>
+                    <div class="wheel-bar">
+                      <div class="wheel-bar-inner-circle"> <p>
+                      June <time>2013</time>
+                    </p>   </div>
+                    <div class="os-bar ios-slice quadrant-1" id="ios-1"></div> <div class="os-bar mac-slice quadrant-1" id="mac-1"></div>
+                    <div class="os-bar mac-slice quadrant-2" id="mac-2" > </div>
+                    <div class="os-bar mac-slice quadrant-3" id="mac-3"></div> <div class="os-bar win-slice quadrant-3" id="win-3"></div>
+                    <div class="os-bar win-slice quadrant-4" id="win-4"></div> <div class="os-bar linux-slice quadrant-4"></div>
+                  </div>
+                  </div>
+                  <ul>
+                    <li class="stat-widget-bar-item"> <p class="stat-widget-text">IOS</p><p class="stat-widget-text stat-widget-percentage">31<sup>%</sup></p></li>
+                    <li class="stat-widget-bar-item"><p class="stat-widget-text">MAC</p><p class="stat-widget-text stat-widget-percentage">48<sup>%</sup></p></li>
+                    <li class="stat-widget-bar-item"><p class="stat-widget-text">LINUX</p><p class="stat-widget-text stat-widget-percentage">9<sup>%</sup></p></li>
+                    <li class="stat-widget-bar-item"><p class="stat-widget-text">WIN</p><p class="stat-widget-text stat-widget-percentage">32<sup>%</sup></p></li>
+                  </ul>
+              </div>
+
+              <div class="widget no-padding">
+
+                  <div class="line-chart-container"></div>
+                  <div class="line-chart-data-container">
+
+                      <ul class="line-chart-data-button-list">
+                          <li class="inline-block"> <a href="#" class="line-char-data-button">Week</a> </li>
+                          <li class="inline-block"> <a href="#" class="line-char-data-button">Month</a> </li>
+                          <li class="inline-block"> <a href="#" class="line-char-data-button">Year</a> </li>
+                      </ul>
+
+                      <div class="line-chart-data-display-container">
+                        <div class="line-chart-data-display-info inline-block align-container-left">APR <time>2013</time></div><div class="line-chart-data-display-info inline-block align-container-right"><span class="plus-sign-text">+</span>21<sup>%</sup></div>
+                      </div>
+                      <div class="line-chart-data-display-container">
+                        <div class="line-chart-data-display-info inline-block align-container-left">MAY <time>2013</time></div><div class="line-chart-data-display-info inline-block align-container-right"><span class="plus-sign-text">+</span>48<sup>%</sup></div>
+                      </div>
+                      <div class="line-chart-data-display-container">
+                        <div class="line-chart-data-display-info inline-block align-container-left">JUN <time>2013</time></div><div class="line-chart-data-display-info inline-block align-container-right"><span class="plus-sign-text">+</span>35<sup>%</sup></div>
+                      </div>
+
+                  </div>
+
+              </div>
+              <div class="widget no-padding">
+                     <iframe type="text/html"
+                        width="auto"
+                        height="169px"
+                        src="http://www.youtube.com/embed/5pfaqk1WL3Y?autoplay=0&showinfo=0&controls=0"
+                        frameborder="0">
+                    </iframe>
+                    <div class="video-control-bar">
+                          <div class="video-progress-bar">
+                              <div class="video-progress-bar-loaded">
+                                  <div class="video-progress-bar-watched">  </div> <div class="video-progress-bar-watched-ball">  </div>
+                              </div>
+
+                          </div>
+                          <div class="arrow-right inline-block"></div>
+                          <div class="video-progress-bar-watched-minute inline-block">4:15<span>/9:23</span></div>
+                          <div class="inline-block video-bar-icon"> <img src="assets/img/ui_sound.png" alt="volume control" class="inline-block align-middle" /> </div>
+                          <div class="inline-block video-bar-icon"> <img src="assets/img/ui_fullscreen.png" alt="volume control" class="inline-block align-middle" /> </div>
+
+                    </div>
+              </div>
+
+              <div class="widget no-padding">
+                    <div class="social-media-widget">
+
+                        <ul >
+                              <li class="inline-block social-media-item-container overflow-hidden"><a href="#" class="social-media-item-button media-facebook"> <div class="social-media-item media-item-facebook">248k</div></a></li>
+                              <li class="inline-block"><a href="#" class="social-media-item-button media-twitter"> <div class="social-media-item media-item-twitter">248k</div></a></li>
+                              <li class="inline-block"><a href="#" class="social-media-item-button media-googleplus"> <div class="social-media-item media-item-googleplus">248k</div></a></li>
+                              <li class="inline-block overflow-hidden"><a href="#" class="social-media-item-button media-mail overflow-hidden"> <div class="social-media-item media-item-mail" id="mail-media">248k</div></a></li>
+                        </ul>
+
+                    </div>
+              </div>
+
+            </div>
+<!--  ---------------------------Second column--------------------------- -->
+            <div class="column">
+              <div class="widget no-padding">
+                  <div class="avatar-widget-box">
+                        <div class="add-sign">+</div>
+                        <img  id="avatar-widget" src="http://placehold.it/150x150" alt="Avatar" />
+                        <h1>Anne Hathaway</h1>
+                        <p class="avatar-widget-text" > Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+                  </div>
+                    <ul class = "avatar-widget-bar">
+                        <li class="avatar-widget-bar-item"><a href="#"><img src="assets/img/ui_comment_bubble.png" alt="Comment" />23 </a></li>
+                        <li class="avatar-widget-bar-item"><a href="#"><img src="assets/img/ui_eye_icon.png" alt="Watch" />841</a></li>
+                        <li class="avatar-widget-bar-item"><a href="#"><img src="assets/img/ui_heart_icon.png" alt="Favorite" />93</a></li>
+                    </ul>
+              </div>
+                <div class="widget no-padding">
+                      <div class="weather-widget-header">
+                            <h2>CLUJ-NAPOCA/RO</h2>
+                      </div>
+                      <div class="weather-widget-current-day-display">
+                            <div class="main-forecast-display-container">
+                                  <div class="main-forecast-display-data">
+                                    <time>FRI 29/06</time>
+                                        <h1>24&deg</h1>
+                                  </div>
+                            </div>
+                      </div>
+
+                      <ul>
+                        <li class="weather-widget-row-container">
+                            <div class="widget-weather-container align-container-left"><span class="weather-widget-text widget-weather-day">SAT </span> <time class="weather-widget-text widget-weather-date"> 29/06</time> </div>
+                            <div class="widget-weather-container align-container-right"> <div class="temperature-degree">25&deg</div>  <div class="sprite sprite-ui_sun_cloud"></div></div>
+                        </li>
+                        <li class="weather-widget-row-container">
+                            <div class="widget-weather-container align-container-left"><span class="weather-widget-text widget-weather-day">SUN </span> <time class="weather-widget-text widget-weather-date"> 29/06</time> </div>
+                            <div class="widget-weather-container align-container-right"> <div class="temperature-degree">22&deg</div>  <div class="sprite sprite-ui_clouds"></div></div>
+                        </li>
+                        <li class="weather-widget-row-container">
+                            <div class="widget-weather-container align-container-left"><span class="weather-widget-text widget-weather-day">MON </span> <time class="weather-widget-text widget-weather-date"> 29/06</time> </div>
+                            <div class="widget-weather-container align-container-right"> <div class="temperature-degree">24&deg</div>  <div class="sprite sprite-ui_clouds"></div></div>
+                        </li>
+                        <li class="weather-widget-row-container">
+                            <div class="widget-weather-container align-container-left"><span class="weather-widget-text widget-weather-day">TUE </span> <time class="weather-widget-text widget-weather-date"> 29/06</time> </div>
+                            <div class="widget-weather-container align-container-right"> <div class="temperature-degree">26&deg</div>  <div class="sprite sprite-ui_sun_cloud"></div></div>
+                        </li>
+                        <li class="weather-widget-row-container">
+                            <div class="widget-weather-container align-container-left"><span class="weather-widget-text widget-weather-day">WED </span> <time class="weather-widget-text widget-weather-date"> 29/06</time> </div>
+                            <div class="widget-weather-container align-container-right"> <div class="temperature-degree">27&deg</div>  <div class="sprite sprite-ui_sun"></div></div>
+                        </li>
+                        <li class="weather-widget-row-container">
+                            <div class="widget-weather-container align-container-left"><span class="weather-widget-text widget-weather-day">THUR </span> <time class="weather-widget-text widget-weather-date"> 29/06</time> </div>
+                            <div class="widget-weather-container align-container-right"> <div class="temperature-degree">29&deg</div>  <div class="sprite sprite-ui_sun"></div></div>
+                        </li>
+
+                      </ul>
+                </div>
+
+                <div class="widget no-padding">
+                    <div class="widget-header twitter-header">
+                        <div class="twitter-header-box">LATEST TWEETS</div>
+                        <ul class="tweet-box-list">
+                          <li class="tweet-box"> <p class="tweet-box-text-container"> Ice-cream trucks only play music when out of ice-cream. Well played, Dad. <a href="#"> @Quora</a> <time>3 minutes ago</time> </p> </li>
+                          <li class="tweet-box"> <p class="tweet-box-text-container"> We are in the process of pushing out all of the new CC apps! we will tweet again once they are live . <a href="#"> @CreativeCloud</a> <time>6 hours ago</time></p> </li>
+                        </ul>
+
+                        <a href="#" class="share-button-box share-to-facebook-bg"> <div class="share-button-logo-container bg-facebook-icon-bg"></div> <div class="share-to-box share-to-facebook-bg">SHARE TO FACEBOOK</div> </a>
+                        <a href="#" class="share-button-box share-to-twitter-bg"> <div class="share-button-logo-container bg-twitter-icon-bg"></div> <div class="share-to-box share-to-twitter-bg">SHARE TO TWITTER</div> </a>
+                        <a href="#" class="share-button-box share-to-googleplus-bg"> <div class="share-button-logo-container bg-googleplus-icon-bg"></div> <div class="share-to-box share-to-googleplus-bg">SHARE TO GOOGLE+</div> </a>
+
+                    </div>
+                </div>
+            </div>
+
+<!--  ---------------------------Third column--------------------------- -->
+
+            <div class="column">
+
+              <div class="widget">
+                <h1 class="widget-h1">Join the newsletter</h1>
+                <input class="flat-input flat-input-mail" type="text" name="Email" value=" yourname@yourmail.com" maxlength="20">
+                <input class="subsribe-flat-mail" type="submit" name="Submit mail" value="Subscribe">
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-h1">Sign in to your account</h1>
+                <input class="flat-input flat-input-mail" type="text" name="Email" value="yourname@yourmail.com" maxlength="20">
+                <input class="flat-input flat-input-password" type="password" name="Email" value=" --------------------" maxlength="20">
+                <input type="submit" name="Submit mail" value="Sign in" id="submit-background-red">
+                <p class="avatar-widget-text">
+                  Forgot your password?
+                </p>
+                <a href="#" class="blue-box"><i class="white-circle">f</i > Sign in with facebook</a>
+              </div>
+
+              <div class="widget">
+                        <div class="file-transfer-progress-widget-container">
+                              <div class="file-transfer-progress-bar" id> <div id="download-bar-progress"></div></div>
+                              <p id="downloading"> <img src="assets/img/ui_download.png" alt="Settings" /> Downloading... <span class="file-transfer-progress-text">81</span> </p>
+                              <div class="file-transfer-progress-bar"> <div id="upload-bar-progress"></div></div>
+                              <p> <img src="assets/img/ui_upload.png" alt="Settings" /> Uploading... <span class="file-transfer-progress-text">43</span></p>
+                        </div>
+              </div>
+
+              <div class="widget clearfix" style="padding: 0px 0px">
+                    <div class="date-widget-header">
+                        <i class="white-circle arrow left"></i>
+                        <h1 class="widget-h1"> Wednesday </h1>
+                        <i class="white-circle arrow right"></i>
+                    </div>
+                    <div class="date-widget-container">
+                            <p>
+                              26
+                            </p>
+                            <input type="submit" name="submit date" value="ADD EVENT" id="date-subit">
+                    </div>
+              </div>
+
+              <div class="widget no-padding overflow-hidden">
+                <div class="date-widget-header">
+                    <i class="white-circle arrow left"></i>
+                    <h1 class="widget-h1"> August 2015 </h1>
+                    <i class="white-circle arrow right"></i>
+
+                </div>
+
+                <div class="calendar-container">
+                  <table>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                      <tr>
+                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                      </tr>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+    </div>
+
+      <script <source src="assets/scripts/calendar.js" ></script>
+  </body>
+</html>
