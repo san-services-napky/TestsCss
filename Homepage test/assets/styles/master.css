@@ -1,0 +1,118 @@
+
+* {
+  position: relative;
+}
+
+section{
+  height: 323px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+    box-sizing: border-box;
+ }
+
+ header {
+    box-sizing: border-box;
+    display: block;
+    height: 132px;
+    width: 100%;
+    padding-top: 42px;
+    line-height: 132px;
+    text-align: left;
+    vertical-align: middle;
+ }
+
+ header h1 {
+   color: #f2ac04;
+   line-height: 18px;
+   font-size: 18px;
+ }
+
+ header h2 {
+   color: #929292;
+   line-height: 12px;
+   font-size: 14px;
+ }
+
+
+ nav {
+   box-sizing: border-box;
+   display: block;
+   height: 44px;
+   border-top: 1px solid  #c4c4c4;
+   border-bottom: 1px solid  #c4c4c4;
+   text-align: left;
+   margin-bottom: 40px
+ }
+
+ .border-box {
+   box-sizing: border-box;
+ }
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-container {
+  display: block;
+  height: 1195px;
+  width:1005px;
+  margin: 0px auto;
+  border: 1px solid #c4c4c4;
+  border-top: 8px solid #f2ac04;
+  box-shadow: 1px 1px 1px 1px #cccccc;
+  padding: 0px 40px;
+}
+
+
+.logo {
+  position:relative;
+  display: inline-block;
+  width: 245px;
+  height: 56px;
+  left: 0px;
+  top: 0%;
+  vertical-align: top;
+  margin-left: -7px;
+  background: url(../img/lorem_logo.png) no-repeat left center;
+  text-align: right;
+}
+
+.header-text-content {
+  position: absolute;
+  display: inline-block;
+  width: 400px;
+  height: 52px;
+  border-left: 1px solid #cac8c5;
+  padding-left: 28px;
+}
+
+.nav-bar-item-container {
+  box-sizing: border-box;
+  width: auto;
+  height: 42px;
+  vertical-align: middle;
+  margin-right: 77px;
+}
+
+.nav-bar-item-container:hover p {
+    z-index: -2;
+    border-bottom: 3px solid #f2ac04;
+}
+
+
+
+.nav-bar-item-container p{
+  position: relative;
+  border-bottom: -6px;
+  font-size: 18px;
+  line-height: 39px;
+  color: grey;
+}
