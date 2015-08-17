@@ -4,9 +4,11 @@
 }
 
 section{
-  height: 323px;
+  box-sizing: border-box;
+  height: auto;
   width: 100%;
   border-bottom: 1px solid #cccccc;
+  padding-bottom: 41px;
 }
 
 a {
@@ -15,6 +17,7 @@ a {
 
 div {
     box-sizing: border-box;
+    position: relative;
  }
 
  header {
@@ -30,13 +33,13 @@ div {
 
  header h1 {
    color: #f2ac04;
-   line-height: 18px;
+   line-height: 28px;
    font-size: 18px;
  }
 
  header h2 {
    color: #929292;
-   line-height: 12px;
+   line-height: 24px;
    font-size: 14px;
  }
 
@@ -49,6 +52,11 @@ div {
    border-bottom: 1px solid  #c4c4c4;
    text-align: left;
    margin-bottom: 40px
+ }
+
+ section h2 {
+   color : #555656;
+   margin-bottom: 11px;
  }
 
  .border-box {
@@ -93,7 +101,7 @@ div {
   border-left: 1px solid #cac8c5;
   padding-left: 28px;
 }
-
+/*-------------------------------------NAV BAR-------------------------------------*/
 .nav-bar-item-container {
   box-sizing: border-box;
   width: auto;
@@ -115,4 +123,137 @@ div {
   font-size: 18px;
   line-height: 39px;
   color: grey;
+}
+/*-------------------------------------CAROUSEL WIDGET-------------------------------------*/
+.carousel-widget {
+  width: 451px;
+  height: 303px;
+  border: 1px solid #b0b0b0;
+  margin-right: 15px;
+}
+
+.carousel-widget-image {
+  width: 449px;
+  height: 249px;
+  margin: 1px auto;
+  margin-bottom: 0px;
+  background: url(http://placehold.it/449x301) no-repeat center center;
+}
+
+.carousel-widget-controller-bar {
+  position: relative;
+  box-sizing: border-box;
+  height: 52px;
+  width: 449px;
+  border: 1px solid #d4d4d4;
+  margin: 0px auto;
+  padding: 0px 21px;
+}
+
+.carousel-widget-arrow-container {
+    position: relative;
+    top: 50%;
+    margin: -13px -0px 0px -3px;
+    border-radius: 100%;
+    width: 26px;
+    height: 26px;
+    background-color: #f2ac04;
+    line-height: 26px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+.carousel-widget-arrow-container i {
+  font-size: 18px;
+  -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.carousel-widget-arrow-container:hover {
+    cursor: pointer;
+}
+
+.carousel-widget-arrow-container:hover i {
+  font-size: 18px;
+    color: black;
+}
+
+.carousel-widget-caption {
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #666666;
+}
+/*-------------------------------------ARTICLE WIDGET-------------------------------------*/
+.article-widget {
+  width: 451px;
+  height: 303px;
+
+  margin-right: -15px;
+}
+
+.article-widget-image {
+  width: 450px;
+  height: 206px;
+  padding: 67px 0px 7px 22px;
+  color: white;
+  background: url(http://placehold.it/449x199) no-repeat top center;
+  border-bottom: 2px solid black;
+}
+
+.article-widget-image h2{
+  color: white;
+  font-size: 24px;
+}
+
+.article-widget-image h1{
+  color: white;
+  text-align: left;
+  font-size: 44px;
+}
+
+.article-widget-text {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 82px;
+  margin-top: 16px;
+  color: #3c3c3c;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.more-button {
+  position: absolute;
+  bottom: -15px;
+  right: 3px;
+  width: 57px;
+  height: 15px;
+  background-color: black;
+}
+
+.more-button{
+
+}
+
+.more-button-text {
+  color:white;
+  font: 12px;
+  height: 100%;
+  width: 43px;
+  border-right: 1px solid white;
+  font-size: 12px;
+  padding-left: 7px;
+  line-height: 14px;
+}
+
+.more-button-arrow {
+  width: 5px;
+  height: 100%;
+  background: url(../img/arrow_right.png) black no-repeat center center;
+  font-weight: 900;
 }
