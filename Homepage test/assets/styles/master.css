@@ -4,6 +4,7 @@
   font-family: serif;
 }
 
+
 section{
   box-sizing: border-box;
   height: auto;
@@ -12,9 +13,11 @@ section{
   padding-bottom: 41px;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 div {
     box-sizing: border-box;
@@ -104,6 +107,7 @@ div {
 }
 /*-------------------------------------NAV BAR-------------------------------------*/
 .nav-bar-item-container {
+  position: relative;
   box-sizing: border-box;
   width: auto;
   height: 42px;
@@ -111,12 +115,50 @@ div {
   margin-right: 77px;
 }
 
-.nav-bar-item-container:hover p {
-    z-index: -2;
-    border-bottom: 3px solid #f2ac04;
+.nav-bar-item-container:hover::after {
+   -webkit-animation-name: item_hover; /* Chrome, Safari, Opera */
+   -webkit-animation-duration: 0.15s; /* Chrome, Safari, Opera */
+   -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+   animation-name: item_hover;
+   animation-duration: 0.15s;
+   animation-delay: 0s;
+   display: block;;
+}
+
+.nav-bar-item-container::before{
+  content: "";
+  background-color: #f2ac04;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 100%;
+
+  opacity: 0;
+  display: none;
+}
+
+.nav-bar-item-container:active::before {
+  -webkit-animation-name: item_hover; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+  animation-name: ripple;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  display: block;;
 }
 
 
+
+.nav-bar-item-container::after {
+  display: none;
+  position: absolute;
+  content: "";
+  background-color: #f2ac04;
+  width: 100%;
+  height: 3px;
+  z-index: 1;
+
+}
 
 .nav-bar-item-container p{
   position: relative;
@@ -125,6 +167,32 @@ div {
   line-height: 39px;
   color: grey;
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes item_hover {
+    0%   {width: 0px; left: 50%}
+    100% {width: 100%; left: 0%}
+}
+
+/* Standard syntax */
+@keyframes item_hover {
+  0%   {width: 0px; left: 50%}
+  100% {width: 100%; left: 0%}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ripple {
+  0%   {opacity: 0.75; width: 0px;  height: 0px; left: 50%; top: 50%; }
+  100% {opacity:   0; width: 100%; height: 100%; left: 0%; top: 0%;  }
+}
+
+/* Standard syntax */
+@keyframes ripple {
+  0%   {opacity: 0.75; width: 0px;  height: 0px; left: 50%; top:50%;}
+  100% {opacity:   0; width: 100%; height: 100%; left: 0%; top:0; }
+}
+
+
 /*-------------------------------------CAROUSEL WIDGET-------------------------------------*/
 .carousel-widget {
   width: 451px;
@@ -264,6 +332,7 @@ div {
   height: 276px;
   margin-top: 37px;
   margin-right: -5px;
+  margin-bottom: 65px;
   border-right: 1px solid #e5e5e5;
 }
 
@@ -339,6 +408,7 @@ div {
 .info-widget h2 {
   position: relative;
   top: -10px;
+  left: 28px;
   color: #565656;
   font-size: 18px;
   margin-bottom: 40px;
@@ -350,6 +420,10 @@ div {
   font-size: 14px;
   line-height: 18px;
 
+}
+
+#about-us-more {
+  right: 35px;
 }
 
 /*-------------------------------------CONTACT INFO WIDGET -------------------------------------*/
@@ -404,4 +478,75 @@ div {
   width: 24px;
   height: auto;
   text-align: right;
+}
+/*-------------------------------------CLIENT LIST -------------------------------------*/
+.client-bar-list {
+  position: relative;
+  width: 100%;
+  height: 107px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+
+.client-bar-list h3 {
+  position: absolute;
+  box-sizing: border-box;
+  display: block;
+  padding: 0px 6px;
+  width: auto;
+  background: white;
+  z-index: 1;
+  top:-6px;
+  left: 37px;
+  color: #343434;
+  font-size: 14px;
+}
+
+.client-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    line-height: 150px;
+    margin: 0px 45px 0px 40px;
+  }
+
+.footer-logo {
+  display: block;
+  width: 121px;
+  height: 78px;
+  background: url(../img/footer_logo.png) no-repeat center center;
+  margin: 0px auto;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #545454;
+}
+
+.clients-nav-bar {
+  display: block;
+  width: 408px;
+  height: 10px;
+  margin: 0px auto 6px;
+  border: 0px solid white;
+}
+
+.clients-nav-bar-element{
+  box-sizing: border-box;
+  height: 100%;
+  width: auto;
+  color: #535353;
+  border-right: 1px solid #535353;
+  padding: 0px 6px;
+  font-size: 9.5px;
+  line-height: 11px;
+}
+
+.clients-nav-bar-element:last-child{
+  border-right: 0px solid white;
 }
