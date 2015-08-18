@@ -1,7 +1,6 @@
 
 * {
   position: relative;
-  font-family: serif;
 }
 
 
@@ -11,6 +10,7 @@ section{
   width: 100%;
   border-bottom: 1px solid #cccccc;
   padding-bottom: 41px;
+
 }
 
 
@@ -22,6 +22,7 @@ a {
 div {
     box-sizing: border-box;
     position: relative;
+
  }
 
  header {
@@ -33,6 +34,7 @@ div {
     line-height: 132px;
     text-align: left;
     vertical-align: middle;
+
  }
 
  header h1 {
@@ -70,17 +72,19 @@ div {
 .inline-block {
   display: inline-block;
   vertical-align: top;
+
 }
 
 .main-container {
   display: block;
   height: 1195px;
   width:1005px;
-  margin: 0px auto;
+  margin: 52px auto;
   border: 1px solid #c4c4c4;
   border-top: 8px solid #f2ac04;
   box-shadow: 1px 1px 1px 1px #cccccc;
   padding: 0px 40px;
+  font-family: arial;
 }
 
 
@@ -104,6 +108,7 @@ div {
   height: 52px;
   border-left: 1px solid #cac8c5;
   padding-left: 28px;
+
 }
 /*-------------------------------------NAV BAR-------------------------------------*/
 .nav-bar-item-container {
@@ -113,6 +118,7 @@ div {
   height: 42px;
   vertical-align: middle;
   margin-right: 77px;
+
 }
 
 .nav-bar-item-container:hover::after {
@@ -277,12 +283,14 @@ div {
 .article-widget-image h2{
   color: white;
   font-size: 24px;
+
 }
 
 .article-widget-image h1{
   color: white;
   text-align: left;
   font-size: 44px;
+
 }
 
 .article-widget-text {
@@ -294,6 +302,7 @@ div {
   color: #3c3c3c;
   font-size: 14px;
   line-height: 20px;
+
 }
 
 .more-button {
@@ -449,7 +458,10 @@ div {
   color:#757575;
   line-height: 35px;
   font-size: 16px;
+}
 
+.contact-content-row:last-child{
+  border-bottom: 0px solid white;
 }
 
 .contact-number {
@@ -534,6 +546,7 @@ footer {
   height: 10px;
   margin: 0px auto 6px;
   border: 0px solid white;
+
 }
 
 .clients-nav-bar-element{
@@ -543,7 +556,7 @@ footer {
   color: #535353;
   border-right: 1px solid #535353;
   padding: 0px 6px;
-  font-size: 9.5px;
+  font-size: 9px;
   line-height: 11px;
 }
 
