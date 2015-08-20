@@ -1,0 +1,94 @@
+@font-face {
+    font-family: helveticaneue-sandals;
+    src: url(../font/helveticaneue.woff);
+}
+
+*{
+  font-family: helveticaneue-sandals;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+}
+
+body {
+  background-color: #313131;
+}
+
+nav {
+  display: block;
+  width: 960px;
+  min-height: 40px;
+  height: auto;
+  margin: 0px auto;
+
+}
+
+.sandals-logo {
+  width: 153px;
+  height: 82px;
+  background: url(../img/logo.jpg) no-repeat center center;
+  background-size: 153px 82px;
+}
+
+.nav-lists-container {
+  width: 807px;
+  min-height: 45px;
+  height: auto;
+  margin: 0px -3px;
+  vertical-align: top;
+}
+
+.nav-list{
+  width: 100%;
+  height: auto;
+  min-height: 10px;
+
+}
+
+.nav-list-item-1{
+  height: 34px;
+  width: auto;
+  font-size: 12px;
+  color: white;
+  line-height: 34px;
+
+}
+
+.nav-list-item-1:hover{
+  color: #c3e300;
+}
+
+.nav-list-item-1:first-child{
+  padding-left: 21px;
+}
+
+
+.nav-list-item-2{
+  height: 41px;
+  width: auto;
+  font-size: 14px;
+  color: #7a7367;
+  line-height: 41px;
+  padding: 0px 17px;
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+.nav-list a < .nav-list-item-2{
+  padding:0px 23px;
+}
+
+.nav-list-item-2:hover {
+  background-color: #313131;
+  color: white;
+  border: 1px solid white;
+}
