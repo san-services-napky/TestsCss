@@ -222,7 +222,7 @@ nav {
   height: 75px;
   border: 1px solid #494847;
   color: #C7C7C7;
-  padding: 16px 22px;
+  padding: 12px 22px;
   margin-right: 2px;
   font-size: 18px;
   line-height: 18px;
@@ -232,7 +232,7 @@ nav {
 }
 
 .sub-menu-content-list{
-  padding-top: 20px;
+  padding-top: 15px;
   height: auto;
   width: 50%;
   color: #787670;
@@ -251,6 +251,34 @@ nav {
   padding-left: 1px;
 }
 
+
+#sub-menu-3 h2 {
+  font-size: 32px;
+  line-height: 24px;
+}
+
+#sub-menu-3 span {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#sub-menu-5 h2 {
+  line-height: 52px;
+  font-size: 32px;
+}
+
+#sub-menu-5 span {
+  font-size: 20px;
+  line-height: 52px;
+}
+
+#sub-menu-5 .sub-menu-content {
+  width: 420px;
+}
+
+#image-container-5{
+  width: 535px;
+}
 
 .sub-menu-content-list li{
   width: 100%;
