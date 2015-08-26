@@ -88,10 +88,10 @@ function setSectionImage(index, subIndex){
                 subIndex -= 12;
                 break;
             case 2:
-                subIndex -= 33;
+                subIndex -= 33 ;
                 break;
             case 3:
-                subIndex -= 12;
+                subIndex -= 42;
                 break;
             case 4:
                 subIndex -= 11
@@ -114,7 +114,7 @@ function sendAjaxRequest(){
 
     var dfd = $.Deferred();
 
-    var ajaxRequest = $.getJSON( "https://api.myjson.com/bins/4pltu" )
+    var ajaxRequest = $.getJSON( "https://api.myjson.com/bins/xyca" )
       .done(function(result) {
         console.log("Json request ");
           sections = result.Sections;
