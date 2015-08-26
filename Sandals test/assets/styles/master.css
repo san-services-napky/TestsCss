@@ -41,7 +41,7 @@ a{
 }
 
 body {
-  background-color: #313131;
+  background-color: #282828;
   font-family: 'helveticaneue';
   font-weight: 300;
 }
@@ -212,6 +212,7 @@ nav {
   height: 100%;
   position: absolute;
   display: block;
+  overflow: hidden;
 }
 
 
@@ -222,7 +223,7 @@ nav {
   height: 75px;
   border: 1px solid #494847;
   color: #C7C7C7;
-  padding: 12px 22px;
+  padding: 0px 22px;
   margin-right: 2px;
   font-size: 18px;
   line-height: 18px;
@@ -272,6 +273,10 @@ nav {
   line-height: 52px;
 }
 
+#sub-menu-1 h2 {
+  padding-top: 18px;
+}
+
 #sub-menu-5 .sub-menu-content {
   width: 420px;
 }
@@ -280,9 +285,59 @@ nav {
   width: 535px;
 }
 
+#image-container-2{
+  width: 535px;
+}
+
+#sub-menu-2 .sub-menu-content {
+  width: 420px;
+  padding: 0px;
+}
+
 .sub-menu-content-list li{
   width: 100%;
   height: 27.5px;
+}
+
+.sub-menu-content-column {
+  width: 50%;
+  height: auto;
+  border-color: 1px solid white;
+
+}
+
+.sandals-label {
+  font-size: 12px;
+}
+
+.sub-menu-content-list-2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #282828;
+  background-color: #353535;
+  padding: 14px;
+
+}
+
+.sub-menu-content-list-2 a{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+
+.sub-menu-content-list-2 li:first-child{
+    font-size: 20px;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    font-family: "helveticaneue-light";
+
+}
+
+.sub-menu-content-list-2 a:hover{
+    cursor: pointer;
+    color: #C7E700;
 }
 
 .sub-menu-content-list a{

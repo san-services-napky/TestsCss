@@ -88,7 +88,7 @@ function setSectionImage(index, subIndex){
                 subIndex -= 12;
                 break;
             case 2:
-                subIndex -= 12;
+                subIndex -= 33;
                 break;
             case 3:
                 subIndex -= 12;
@@ -103,7 +103,7 @@ function setSectionImage(index, subIndex){
           imageUrl = sections[index].img
       }
 
-  console.log("image url : " + imageUrl);
+  console.log("image url : " + imageUrl);~
   $(imageContainerSelector).fadeOut(200, function(){
     $(this).css("background-image",imageUrl)
   }).fadeIn(200);
@@ -114,7 +114,7 @@ function sendAjaxRequest(){
 
     var dfd = $.Deferred();
 
-    var ajaxRequest = $.getJSON( "https://api.myjson.com/bins/4wzye" )
+    var ajaxRequest = $.getJSON( "https://api.myjson.com/bins/4pltu" )
       .done(function(result) {
         console.log("Json request ");
           sections = result.Sections;
