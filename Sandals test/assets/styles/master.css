@@ -55,6 +55,12 @@ nav {
 
 }
 
+.col-50{
+  width: 50%;
+}
+.bullet-24{
+  font-size: 24px;
+}
 .sandals-logo {
   width: 153px;
   height: 82px;
@@ -75,6 +81,15 @@ nav {
   height: auto;
   min-height: 10px;
 
+}
+
+.list {
+  height: auto;
+  width: 100%;
+}
+
+.height-auto{
+  height: auto;
 }
 
 .nav-list-item-1{
@@ -233,7 +248,7 @@ nav {
 }
 
 .sub-menu-content-list{
-  padding-top: 15px;
+  padding-top: 5px;
   height: auto;
   width: 50%;
   color: #787670;
@@ -249,7 +264,7 @@ nav {
   height: 366px;
   background-size: 100% 100%;
   margin-left: -2px;
-  padding-left: 1px;
+  padding-left: 10px;
 }
 
 
@@ -287,8 +302,8 @@ nav {
 
 #sub-menu-4 .sub-menu-content-column{
   box-sizing: border-box;
-  height: 100%;
-  padding-left: 20px;
+  height: 185px;
+  padding-left: 10px;
 
 }
 
@@ -296,7 +311,7 @@ nav {
   width: 100%;
 }
 
-#sub-menu-4 i{
+#sub-menu-4 .sub-menu-content-list li < i{
   font-size: 32px;
 }
 
@@ -319,14 +334,24 @@ nav {
   width: 515px;
   padding: 30px 7px;
 }
-
+#sub-menu-4 .sub-menu-item i{
+  font-size: 24px;
+}
 #sub-menu-4 h2{
 
   width: 475px;
   color: #cdbaa7;
   line-height: 72px;
-  font-size: 54px;
-  margin-bottom: 30px;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+#sub-menu-4  .nav-list-subitem:hover {
+  color: #C7E700;
+}
+
+#sub-menu-4  .sub-item-sub-list li:hover {
+  color: white;
 }
 
 #sub-menu-4 h2 sup{
@@ -340,7 +365,53 @@ nav {
   width: 100%;
 }
 
-.sub-item-sub-list li {
+.sub-menu-content-footer-wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 475px;
+  height: 30px;
+  border: 1px solid #323232;
+  margin: 0px auto;
+  z-index: 2;
+  font-family: "helveticaneue-ultralight";
+  -webkit-transition: background-color 0.25s; /* Safari */
+  transition: background-color 0.25s;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.sub-menu-content-footer-wrapper:hover {
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s; /* Safari */
+  transition: background-color 0.25s;
+  background-color: #494847;
+}
+
+.sub-menu-footer-btn {
+  width: 30px;
+  height: 100%;
+  font-size: 32px;
+  background-color: #D62415;
+  line-height: 15px;
+}
+
+.sub-menu-footer-btn i{
+    vertical-align: middle;
+    line-height:27px;
+}
+
+.sub-menu-content-footer-wrapper span{
+  font-size: 12px;
+  vertical-align: top;
+  display: inline-block;
+  left: -4px;
+  position: relative;
+  top: -5px;
+}
+
+.sub-item-sub-list > li {
     height: 15px;
     font-size: 16px;
     color:#97938b;
@@ -351,6 +422,28 @@ nav {
     color:#97938b;
     line-height: 27px;
 }
+
+
+
+.sub-item-sub-list  .sub-item-sub-list li{
+    padding-left: 10px;
+
+    height: 18px;
+    min-height: 18px;
+    font-size: 12px;
+    color: #787165;
+    line-height: 11px;
+    text-align: left;
+}
+
+.sub-item-sub-list  .sub-item-sub-list li i{
+    padding-left: 5px;
+    font-size: 5px;
+    color: #787165;
+    line-height: 1px;
+    vertical-align: middle;
+}
+
 
 
 #image-container-5{
@@ -364,7 +457,7 @@ nav {
 
 .sub-menu-content-list li{
   width: 100%;
-  height: 27.5px;
+  min-height: 18px;
 }
 
 .sub-menu-content-column {
